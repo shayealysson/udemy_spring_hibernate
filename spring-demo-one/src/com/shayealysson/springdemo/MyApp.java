@@ -5,10 +5,10 @@ public class MyApp {
 	public static void main(String[] args) {
 		
 		//create the object
-		BaseballCoach bCoach = new BaseballCoach();
+		Coach coach = new BaseballCoach();
 		
 		//use the object
-		System.out.println(bCoach.getDailyWorkout());
+		System.out.println(coach.getDailyWorkout());
 	}
 
 }
