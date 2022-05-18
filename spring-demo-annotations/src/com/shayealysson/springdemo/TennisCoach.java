@@ -9,9 +9,15 @@ public class TennisCoach implements Coach {
 	private FortuneService fortuneService;
 	
 	@Autowired
+	public void doWireFortuneService(FortuneService service) {
+		fortuneService = service;
+	}
+	
+	/*
+	@Autowired
 	public void setFortuneService(FortuneService service) {
 		this.fortuneService = service;
-	}
+	}*/
 
 	/*
 	@Autowired
