@@ -1,0 +1,26 @@
+package com.shayealysson.springdemo;
+
+public class CricketCoach implements Coach {
+
+	//define a private field for the dependency service
+	private FortuneService fortuneService;
+		
+	//default constructor
+	public CricketCoach() {}
+	
+	public void setFortuneService(FortuneService fortuneService) {
+		System.out.println("CricketCoach: setFortuneService");
+		this.fortuneService = fortuneService;
+	}
+
+	@Override
+	public String getDailyWorkout() {
+		return "CricketCoach: Run for 5 minuites!";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		return fortuneService.getFortune();
+	}
+
+}
