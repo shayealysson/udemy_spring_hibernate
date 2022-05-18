@@ -11,7 +11,7 @@
     <bean id="myFortune" class="com.shayealysson.springdemo.HappyFortuneService">
     </bean>
     
-    <bean id="myCoach" class="com.shayealysson.springdemo.TrackCoach">
+    <bean id="myCoach" class="com.shayealysson.springdemo.BaseballCoach">
     	<constructor-arg ref="myFortune" />
     </bean>
 </beans>
