@@ -8,11 +8,16 @@ public class TennisCoach implements Coach {
 	
 	private FortuneService fortuneService;
 	
-	
+	@Autowired
+	public void setFortuneService(FortuneService service) {
+		this.fortuneService = service;
+	}
+
+	/*
 	@Autowired
 	public TennisCoach(FortuneService service) {
 		fortuneService = service;
-	}
+	}*/
 
 	@Override
 	public String getDailyWorkout() {
