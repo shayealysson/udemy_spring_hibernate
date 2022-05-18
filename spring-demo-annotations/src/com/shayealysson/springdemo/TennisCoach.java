@@ -6,12 +6,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 	
+	@Autowired
 	private FortuneService fortuneService;
 	
+	/*
 	@Autowired
 	public void doWireFortuneService(FortuneService service) {
 		fortuneService = service;
-	}
+	}*/
 	
 	/*
 	@Autowired
