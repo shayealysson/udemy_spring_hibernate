@@ -1,6 +1,14 @@
 package com.shayealysson.springdemo;
 
 public class TrackCoach implements Coach {
+	
+	//define a private field for the dependency service
+	private FortuneService fortuneService;
+		
+	//define a constructor for dependency injection
+	public TrackCoach(FortuneService service) {
+		fortuneService = service;
+	}
 
 	@Override
 	public String getDailyWorkout() {
