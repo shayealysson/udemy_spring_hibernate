@@ -7,11 +7,14 @@ public class TrackCoach implements Coach {
 		
 	//define a constructor for dependency injection
 	public TrackCoach(FortuneService service) {
+		System.out.println("-TrackCoach Constructor with param-");
 		fortuneService = service;
 	}
 	
 	//default constructor
-	public TrackCoach() {}
+	public TrackCoach() {
+		System.out.println("-TrackCoach Constructor NO param-");
+	}
 
 	@Override
 	public String getDailyWorkout() {
@@ -22,6 +25,16 @@ public class TrackCoach implements Coach {
 	public String getDailyFortune() {
 		// use fortuneService to get a fortune
 		return fortuneService.getFortune();
+	}
+	
+	//add init method
+	public void onStartUp() {
+		System.out.println("-START-");
+	}
+	
+	//add destroy method
+	public void onShutDown() {
+		System.out.println("-END-");
 	}
 
 }
