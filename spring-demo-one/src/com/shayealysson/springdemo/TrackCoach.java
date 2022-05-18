@@ -9,6 +9,9 @@ public class TrackCoach implements Coach {
 	public TrackCoach(FortuneService service) {
 		fortuneService = service;
 	}
+	
+	//default constructor
+	public TrackCoach() {}
 
 	@Override
 	public String getDailyWorkout() {

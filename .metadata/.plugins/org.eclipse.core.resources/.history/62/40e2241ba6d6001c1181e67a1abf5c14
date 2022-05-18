@@ -11,9 +11,6 @@ public class BaseballCoach implements Coach{
 		fortuneService = service;
 	}
 	
-	//default constructor
-	public BaseballCoach() {}
-	
 	@Override
 	public String getDailyWorkout() {
 		return "Run for 30 minuites!";
